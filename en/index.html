@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Code Mode - студия HTML верстки</title>
+	<meta name="description" content="Code Mode - Front-end development studio | Accurate, logical, simple, readable HTML5 code">
+	
+	<!--Дополнительная информация для ссылок на даный сайт с внешних ресусов по типу ВКонтакте или Facebook -->
+	<meta property="og:title" content="Code Mode - Front-end development studio"/>
+	<meta property="og:url" content="http://codemode.com.ua/en/"/>
+	<meta property="og:image" content="../img/cm.png"/>
+	<meta property="og:site_name" content="codemode.com.ua/en/"/>
+	<meta property="fb:admins" content="аккаунт владельца на фейсбуке"/>
+	<meta property="og:description" content="Code Mode - Front-end development studio | Accurate, logical, simple, readable HTML5 code"/>
+	<link rel="image_src" href="../img/cm.png"/> 
+	
+	<link rel="shortcut icon" href="../favicon.ico" />
+	
+	<meta content="telephone=no" name="format-detection"> <!--Отключить преобразование телефонных номеров в ссылки для Safari (iPhone / IPod / IPad) и Android браузера -->
+
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Указание для IE использовать максимальную совместимость -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+#preloader{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #fff;
+z-index: 999;
+}
+
+@keyframes rotate-loading {
+0%  {transform: rotate(0deg); -webkit-transform: rotate(0deg);}
+100% {transform: rotate(360deg);-webkit-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes rotate-loading {
+0%  {transform: rotate(0deg); -webkit-transform: rotate(0deg); }
+100% {transform: rotate(360deg); -webkit-transform: rotate(360deg);}
+}
+
+@keyframes rotate-loading {
+0%  {transform: rotate(0deg); -webkit-transform: rotate(0deg);}
+100% {transform: rotate(360deg); -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes rotate-loading {
+0%  {transform: rotate(0deg); -webkit-transform: rotate(0deg); }
+100% {transform: rotate(360deg);-webkit-transform: rotate(360deg);}
+}
+
+@keyframes loading-text-opacity {
+0%  {opacity: 0}
+20% {opacity: 0}
+50% {opacity: 1}
+100%{opacity: 0}
+}
+
+@-webkit-keyframes loading-text-opacity {
+0%  {opacity: 0}
+20% {opacity: 0}
+50% {opacity: 1}
+100%{opacity: 0}
+}
+
+.loading-container, .loading {
+height: 100px;
+position: relative;
+width: 100px;
+border-radius: 100%;
+}
+
+.loading-container { 
+position:absolute; 
+margin: 0 auto; 
+top:40%;
+left: 50%;
+margin-left:-50px;
+
+background-image: url(../img/preloader_logo.png);
+background-repeat: no-repeat;
+background-size: 80px auto;
+background-position: 10px 20px;
+}
+
+
+.loading {
+border: 2px solid transparent;
+border-color: transparent #19418A transparent #19418A;
+animation: rotate-loading 1.5s linear 0s infinite normal;
+transform-origin: 50% 50%;
+-webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
+-webkit-transform-origin: 50% 50%;
+}
+
+#loading-text {
+-webkit-animation: loading-text-opacity 1s linear 0s infinite normal;
+animation: loading-text-opacity 1s linear 0s infinite normal;
+color: #19418A;
+font-family: "Helvetica Neue, "Helvetica", "arial"";
+font-size: 11px;
+font-weight: bold;
+padding-top:65px;
+opacity: 1;
+position: absolute;
+text-align: center;
+text-transform: uppercase;
+top: 0;
+width: 100px;
+height:50px;
+cursor:default;
+}
+</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+			var $preloader = $('#preloader');
+				$close  = $preloader.find('.loading-container');
+			$close.delay(500).fadeOut('slow');
+			$preloader.delay(500).fadeOut('slow');
+		});
+	</script>
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/magnific-popup.css" />
+	
+	<link rel="stylesheet/less" type="text/css" href="../less/main.less">
+	<script type="text/javascript" src="../js/less.js"></script>
+	
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/fullpage/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="../js/fullpage/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.validate.js"></script>
+	<script type="text/javascript" src="../js/common_en.js"></script>
+</head>
+<body>
+
+<div id="preloader">
+	<div class="loading-container">
+		<div class="loading"></div>
+		<div id="loading-text">loading...</div>
+	</div>
+</div>
+
+
+
+<header>
+<!--Навигация по сайту -->
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		  </button>
+		  <a class="navbar-brand" href="#1Page">Code Mode</a>
+		</div>
+		<div class="collapse navbar-collapse">
+		  <ul class="nav navbar-nav navbar-right" id="menu">
+			<li data-menuanchor="1Page"><a href="#1Page" class="nav_a">Main</a></li>
+			<li data-menuanchor="2Page"><a href="#2Page" class="nav_a">Information</a></li>
+			<li data-menuanchor="3Page"><a href="#3Page" class="nav_a">Portfolio</a></li>
+			<li data-menuanchor="4Page"><a href="#4Page" class="nav_a">Contacts</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+</header>
+		
+		
+<div id="fullpage">
+	<div class="section" id="section0">
+			<img class="logo" src="../img/cm.png" alt="logo">
+			<h1>Front-end development studio</h1>
+			<a class="ru_2" href="../index.html">RU</a><a class="en_2" href="index.html">EN</a><br><br>
+			<div class="mouse_div">
+				<img src="../img/mouse.png" alt="mouse">
+					<div class="arrows">
+						<div class="arrow"></div><br>
+						<div class="arrow"></div><br>
+						<div class="arrow"></div>
+					</div>
+			</div>
+		<a href="#2Page" class="tip">Scroll down to continue</a>
+		<br><br>
+	</div>
+
+<!--Информация -->
+	<div class="section" id="section1">
+		<div class="container personal_container">
+			<h1><span class="label_logo">"Code Mode"</span> front-end have</h1>
+			<p><span class="info">Semanticity:</span> Accurate, logical, simple, readable HTML5 code</p>
+			<p><span class="info">Validity:</span> Verification of each page for correctness by the official validator - validator.w3.org</p>
+			<p><span class="info">Cross-browser compatibility:</span> Website will look and work equally well in all popular browsers (Internet Explorer 9+, Mozilla Firefox, Google Chrome, Opera, Safari, etc.)</p>
+			<p><span class="info">Responsivity</span> (Optional): Making website responsive for the most comfortable viewing on devices that have non-standard screen resolution (tablets, mobile phones, netbooks, etc.)</p>
+		</div>
+		<br><br>
+	</div>
+	
+<!--Портфолио -->
+<div class="section" id="section2">
+	<div class="container personal_container">
+            <h2>Portfolio</h2>
+			<nav>
+				<ul class="portfolio_ul">
+					<li id="all">All</li>
+					<li id="web">Websites</li>
+					<li id="training">Layouts</li>
+				</ul>
+			</nav>
+        <section class="work">
+            <figure class="web">
+                    <dl>
+					<dt></dt>
+						    <dd><a href="#popup1" class="popup">Short<br>description</a></dd>
+							<dd class="low_dd"><a href="http://nrcrm.gov.ua/en/" target="_blank">Visit<br>webpage</a></dd>
+                    </dl>
+            </figure>
+            <figure class="web">
+                    <dl>
+					<dt></dt>
+						    <dd><a href="#popup2" class="popup">Short<br>description</a></dd>
+							<dd class="low_dd"><a href="http://smartcraft.cc.ua/" target="_blank">Visit<br>webpage</a></dd>
+                    </dl>
+            </figure>
+            <figure class="training">
+                    <dl>
+					<dt></dt>
+						    <dd><a href="#popup3" class="popup">Short<br>description</a></dd>
+							<dd class="low_dd"><a href="../portfolio/czech/index.html" target="_blank">View<br>layout</a></dd>
+                    </dl>
+            </figure>
+			         <figure class="training">
+                    <dl>
+					<dt></dt>
+						    <dd><a href="#popup4" class="popup">Short<br>description</a></dd>
+							<dd class="low_dd"><a href="../portfolio/dobrivo/index.html" target="_blank">View<br>layout</a></dd>
+                    </dl>
+            </figure>
+			<figure class="training">
+                    <dl>
+					<dt></dt>
+						    <dd><a href="#popup5" class="popup">Short<br>description</a></dd>
+							<dd class="low_dd"><a href="../portfolio/layout/index.html" target="_blank">View<br>layout</a></dd>
+                    </dl>
+            </figure>
+        </section>
+	</div>
+	<br><br>
+</div>
+
+<!--Контакты -->
+<div class="section" id="section3">
+
+	<div class="form_cover">
+		<form id="form">
+		<span>Have a question? Write!</span>
+			<p>Your name:</p>
+			<input type="text" name="user_name" placeholder="Name" required /><br>
+			<p>E-mail, on which the answer will be sent:</p>
+			<input type="email" name="email" placeholder="E-mail" data-rule-required="true" data-rule-email="true" data-msg-email="Пожалуйста, введите адрес, соответствующий формату 'mail@site.com'" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,63}$" required /><br>
+			<p>Your question:</p>
+			<textarea class="question" name="question" required></textarea>
+			
+			<button>Ask a Question</button>
+		</form>
+	</div >
+
+
+	<footer>
+		<div class="container">
+			<div class="row first_line">
+				<div class="col-md-4 сol-contacts">
+					<i class="fa fa-envelope-o"></i><a href="mailto:codemode@ukr.net"><p class="mail">codemode@ukr.net</p></a>
+				</div>
+				<div class="col-md-4 сol-contacts">
+					<i class="fa fa-mobile"></i><p class="tel">050-2747439;</p><p class="tel_2">097-2860613</p>
+				</div>
+				<div class="col-md-3 сol-contacts">
+					<i class="fa fa-skype"></i><p class="mail">code-mode</p>
+				</div>
+				<div class="col-md-1 сol-contacts">
+					<a href="https://vk.com/toha_ua" target="_blank"><i class="fa fa-vk"></i></a>
+				</div>
+			</div>
+					
+			<div class="row">
+				<div class="col-md-12"><p class="copyright">&copy; 2015 - Code Mode</p></div>
+			</div>
+		</div>
+	</footer>
+</div>
+	
+	
+<div class="hidden">
+	<div class="popup_content" id="popup1">
+		<div class="popup_img" id="img1"></div>
+			<div class="popup_text">
+				<h3>Official page of State Institution "National Research Center for Radiation Medicine of National Academy of Medical Sciences of Ukraine" (NRCRM)</h3>
+				<p><span class="features">Features: </span> own design, logo design, making of layout "from scratch". Website was created in the strict official style, with no visual frills.</p>
+				<a href="http://nrcrm.gov.ua/en/" target="_blank">Visit webpage</a>
+			</div>
+	</div>
+	
+	<div class="popup_content" id="popup2">
+		<div class="popup_img" id="img2"></div>
+			<div class="popup_text">
+				<h3>Smart Craft - portfolio website of design studio</h3>
+				<p><span class="features">Features: </span>full responsivity (320px - 1600+px), connection of Flash-animation; connection and stylisation of galleries, etc..</p>
+				<a href="http://smartcraft.cc.ua/" target="_blank">Visit webpage</a>
+			</div>
+	</div>
+	
+	<div class="popup_content" id="popup3">
+		<div class="popup_img" id="img3"></div>
+			<div class="popup_text">
+				<h3>Test layout "Minit pujcka"</h3>
+				<p><span class="features">Features: </span>connection and stylisation of Flip Clock; timer that count time of staying on the page was made; smoothly switching between tabs was implemented, etc.</p>
+				<a href="../portfolio/czech/index.html" target="_blank">Watch the layout</a>
+			</div>
+	</div>
+	
+	<div class="popup_content" id="popup4">
+		<div class="popup_img" id="img4"></div>
+			<div class="popup_text">
+				<h3>Test layout "Dobrivo"</h3>
+				<p><span class="features">Features: </span>the form of calculation, which determines the amount of savings on the basis of specified parameters was implemented with help of JQuery; connection of background slider, etc.</p>
+				<a href="../portfolio/dobrivo/index.html" target="_blank">Watch the layout</a>
+			</div>
+	</div>
+	
+	<div class="popup_content" id="popup5">
+		<div class="popup_img" id="img5"></div>
+			<div class="popup_text">
+				<h3>Test layout "Layout"</h3>
+				<p><span class="features">Features: </span>full responsivity (320px - 1600+px); connection of background gallery, stylization of standard scrollbar in the &lt;select&gt; element, etc.</p>
+				<a href="../portfolio/layout/index.html" target="_blank">Watch the layout</a>
+			</div>
+	</div>
+	
+	<div class="popup_content" id="popup_form">
+		<div class="popup_img_form"></div>
+			<div class="popup_text">
+				<h3>Thanks for the question! We will contact with you soon.</h3>
+				<button id="close_popup_button">Close</button>
+			</div>
+	</div>
+</div>
+	
+	
+</div>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-69333303-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>

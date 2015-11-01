@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<title>LAYOUT</title>
+	<meta name="description" content="ЗДЕСЬ ДОЛЖНО БЫТЬ ОПИСАНИЕ САЙТА">
+	
+	<!--Дополнительная информация для ссылок на даный сайт с внешних ресусов по типу ВКонтакте или Facebook -->
+	<meta property="og:title" content="Название сайта"/>
+	<meta property="og:url" content="http://веб-адрес сайта"/>
+	<meta property="og:image" content="img/ЛОГО"/>
+	<meta property="og:site_name" content="адрес сайта"/>
+	<meta property="fb:admins" content="аккаунт владельца на фейсбуке"/>
+	<meta property="og:description" content="ОПИСАНИЕ САЙТА"/>
+	<link rel="image_src" href="img/ЛОГО"/> 
+	
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Указание для IE использовать максимальную совместимость -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="shortcut icon" href="favicon.png" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+	
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet/less" type="text/css" href="less/main.less">
+	<link rel="stylesheet" href="css/jquery.jscrollpane.css" />
+	<link rel="stylesheet" href="css/customSelectBox.css" />
+	<script type="text/javascript" src="js/less.js"></script>
+	
+	
+</head>
+<body class="noJS">
+
+	
+<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+						<a class="navbar-brand" href="">LAYOUT</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="">html</a></li>
+						<li><a href="">css</a></li>
+						<li><a class="third" href="">javascript</a></li>
+						<li><a class="enter_button"  href="">ENTER</a></li>
+					</ul>
+				</div>
+			</div>
+</nav>
+
+
+<div id="wrapper">
+	<div id="carousel">
+		<img src="img/slide1.jpg" alt="1" width="1349" height="420" />
+		<img src="img/slide1.jpg" alt="2" width="1349" height="420" />
+		<img src="img/slide1.jpg" alt="3" width="1349" height="420" />
+		<img src="img/slide1.jpg" alt="4" width="1349" height="420" />
+		<img src="img/slide1.jpg" alt="5" width="1349" height="420" />
+	</div>
+</div>
+	
+<div class="container">
+	<div class="col-md-12" id="gallery">
+		<a href="#" id="prev" title="Show previous"><img src="img/arrow_left.png"></a>
+		<a href="#" id="next" title="Show next"><img src="img/arrow_right.png"></a>
+		<div id="pager"></div>
+			<div class="skills">
+				Monetize<br>
+				your skills now!<br>
+				<a href=""><span class="go_button">GO!</span></a>
+			</div>
+	</div>
+</div>
+	
+	
+	
+<div class="container" id="middle_div">
+	<div class="row">
+		<div class="col-md-6 text">
+			<p>Lorem ipsum</p>
+			In this section, you can specify any information about yourself,
+			 insert your photos, your interests and skills. It is also desirable 
+			 to use tag canvas.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+			do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+			 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+			 in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+			 nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+			 sunt in culpa qui officia deserunt mollit anim id est laborum. 
+			 Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+			 accusantium doloremque laudantium, totam rem aperiam, eaque 
+			 ipsa quae ab illo inventore veritatis et quasi architecto beatae 
+			 vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia 
+			 voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur 
+			 magni dolores eos qui ratione voluptatem sequi nesciunt. Neque 
+			 porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+			 consectetur, adipisci velit, sed quia non numquam eius modi 
+			 tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+			</div>	<div class="col-md-6" id="coffee" ><img src="img/coffee.jpg"></div>
+		
+	</div>
+</div>
+
+
+<div id="low_div">
+	<form class="form">
+		<p>Register</p>
+		
+		<input class="styler" name="user_email" type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required />
+		<input class="styler" name="user_pass" type="password" placeholder="Password" pattern=".{5,}" required />
+		
+		<select class="custom">
+		 <option>Country</option>  
+		  <option value="Argentina">Argentina</option>
+		  <option value="Australia">Australia</option>
+		  <option value="Austria">Austria</option>
+		  <option value="Belgium">Belgium</option>
+		  <option value="Brazil">Brazil</option>
+		  <option value="Canada">Canada</option>
+		  <option value="China">China</option>
+		  <option value="Croatia">Croatia</option>
+		  <option value="Denmark">Denmark</option>
+		  <option value="Finland">Finland</option>
+		  <option value="France">France</option>
+		  <option value="Germany">Germany</option>
+		  <option value="Korea">Korea</option>
+		  <option value="Mexico">Ukraine</option>
+		</select>
+
+		<a class="enter_button_2"  href="">ENTER</a>
+		
+	</form>
+</div>
+
+<footer>
+&copy; 2015 layout
+</footer>
+
+	<!--Подключаемые скрипты-->
+	<script type="text/javascript" src="js/jquery.carouFredSel-6.0.4-packed.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	
+		<script src="js/jScrollPane.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/SelectBox.js"></script>
+		<script src="js/jquery.validate.js"></script>
+
+</body>
+</html>

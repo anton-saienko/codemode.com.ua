@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<title>ДОБРИВО</title>
+	<meta name="description" content="Органическое Нано-добриво">
+	
+	<!--Дополнительная информация для ссылок на веб-сайт с внешних ресусов по типу ВКонтакте или Facebook -->
+	<meta property="og:title" content="Органическое Нано-добриво"/>
+	<meta property="og:url" content="http://dobrivo.com"/>
+	<meta property="og:image" content="img/logo.png"/>
+	<meta property="og:site_name" content="Добриво"/>
+	<meta property="og:description" content="Наше добриво самое лучшее!"/>
+	<link rel="image_src" href="img/logo.png"/> <!--Конец доп. инфы -->
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Указание для IE использовать максимальную совместимость -->
+
+	<link rel="shortcut icon" href="favicon.png" /><!-- Мини-иконка -->
+
+	<!-- Подключаемые стили -->
+	<link href="css/jquery.formstyler.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/fonts.css" />
+
+
+	<link rel="stylesheet/less" type="text/css" href="less/main.less">
+	<script type="text/javascript" src="js/less.js"></script>
+	
+</head>
+
+<body>
+	<header>
+		<div class="logo">ДОБРИВО</div>
+		
+			<!--выбор языка-->
+			<ul class="ru">
+				<li>
+				<a  href="">RU</a>
+					<ul class="choose_lang">
+						 <li><a href="/">EN</a></li>
+					</ul>
+				</li>
+			</ul><!--конец выбора языка-->
+
+		<!--меню-->
+		<nav class="nav_1">
+			<ul class="menu_little">
+				<li><a href="">СЕРТИФИКАТЫ</a></li>
+				<li><a href="">СПРАВОЧНИК</a></li>
+				<li><a href="">НОВОСТИ</a></li>
+				<li><a href="">ОПЛАТА И ДОСТАВКА</a></li>
+			</ul>
+		</nav><!--конец меню-->
+			
+		<!--ГЛАВНОЕ меню-->
+		<nav class="nav_2">
+			<ul class="menu">
+				<li>
+					<a class="first" href="">НАГРО-УДОБРЕНИE</a>
+					<ul class="dropdown">
+						 <li><a href="/">Удобрение №1</a></li>
+						 <li><a href="/">Удобрение №2</a></li>
+					</ul>
+				</li>
+				
+				<li>
+					<a class="second" href="">БИОДИЗЕЛЬ</a>
+					<ul class="dropdown" id="dropdown_2">
+						 <li><a href="/">Биодизель №1</a></li>
+						 <li><a href="/">Биодизель №2</a></li>
+					</ul>
+				</li>
+				
+				<li>
+					<a class="third" href="">СИЛКО</a>
+					<ul class="dropdown" id="dropdown_3">
+						 <li><a href="/">Силко №1</a></li>
+						 <li><a href="/">Силко №2</a></li>
+					</ul>
+				</li>
+				
+				<li><a class="fourth" href="">ИНТЕРНЕТ-МАГАЗИН</a></li>
+				<li><a class="fifth" href="">ВОПРОСЫ-ОТВЕТЫ</a></li>
+				<li><a class="sixth" href="">КОНТАКТЫ</a></li>
+				<li><a class="basket" href=""><span></span>КОРЗИНА</a></li>
+			</ul>
+		</nav><!-- конец ГЛАВНОГО меню-->
+	</header>
+	
+	<div class="main_description">
+		<p class="slogan">ОРГАНИЧЕСКОЕ</p>
+		<p class="slogan">НАНО-УДОБРЕНИЕ</p>
+		<p class="slogan">ДОБРИВО</p>
+	</div>
+	
+	<img class="bottle" src="img/bottle.png" alt="bottle">
+	<img class="star" src="img/star.png" alt="star">
+	<img class="star" src="img/star.png" alt="star">
+	<img class="star" src="img/star.png" alt="star">
+	<img class="bg2" src="img/bg2.jpg" alt="bg2">
+	
+	<div class="description">
+		<p class="fat_p">ПРИРОСТ УРОЖАЯ</p>
+		<p class="little_p">в сравнении с химическим удобрением</p>
+		<p class="brown_p">30%-250%</p>
+	</div>
+	
+	<div class="description2">
+		<p class="fat_p">ЭКОНОМИЯ</p>
+		<p class="little_p">химических удобрений в хозяйстве</p>
+		<p class="brown_p">до 70%</p>
+	</div>
+
+	<div class="description3">
+		<p class="fat_p">РОСТ КОРНЕВОЙ</p>
+		<p class="little_p">системы растений при использовании</p>
+		<p class="brown_p">в 3-10раз</p>
+	</div>
+	
+	<div class="description4">
+		<p class="very_fat_p">УЗНАЙТЕ<br> О НАГРО БОЛЬШЕ!</p>
+	</div>
+	
+	<div class="trali-vali">
+		<p>Хотитите<br>трали-вали<br>ла-лала?</p>
+	</div>
+	
+	<div class="button">
+		<a href=""><p>УЗНАТЬ БОЛЬШЕ</p></a>
+	</div>
+	
+	<!--Форма для подсчета прибыли-->
+	<div class="form">
+		<div class="form_inside">
+			<p class="fat_1">Посчитайте сколько денег </p>
+			<p class="fat_2">ВЫ СЭКОНОМИТЕ! </p>
+		
+			<hr>
+		
+			<span class="choose">Выберите культуру</span>
+			<select class="count1" name="agriculture" id="agriculture">
+					<option selected value="3100">Пшеница = 3100 грн / т</option>
+					<option value="5000">Просо = 5000 грн / т</option>
+					<option value="2500">Ячмень = 2500 грн / т</option>
+					<option value="7000">Гречка = 7000 грн / т</option>
+					<option value="2000">Кукуруза = 2000 грн / т</option>
+			</select>
+		
+			<form method="post" id="calculate_profit">
+				<span class="choose">Плотность посева, кг/га</span>
+				<input class="count2" id="number_field_1" name="number_field_1" type="number"/>
+				
+				<span class="choose">Затраты на хим. удобрения, грн/га</span>
+				<input class="count2" id="number_field_3" name="number_field_3" type="number"/>
+				
+				<span class="choose">Посевная площадь, га</span>
+				<input class="count2" id="number_field_2" name="number_field_2" type="number"/>		
+				
+			</form>
+		
+		<hr>
+		
+		<div class="div_sum">
+			<span class="profit1">Сумма расходов с ХИМ. УДОБРЕНИЕМ: </span><span class="total">___</span> <span class="grn">грн</span><br>
+			<span class="profit2">СУММА РАСХОДОВ С ДОБРИВОМ: </span><span class="alternative">___</span> <span class="grn">грн</span><br>
+			<span class="economy1">ЭКОНОМИЯ: </span><span class="economy2">___</span> <span class="grn">грн</span>
+	   </div>
+		</div>
+	</div><!--конец формы-->
+
+<!--фоновый слайдер-->
+<div id="wrapper">
+	<div id="carousel">
+		<img src="img/bg3.jpg" alt="1" width="2045" height="484" />
+		<img src="img/bg3.jpg" alt="2" width="2045" height="484" />
+		<img src="img/bg3.jpg" alt="3" width="2045" height="484" />
+		<img src="img/bg3.jpg" alt="4" width="2045" height="484" />
+		<img src="img/bg3.jpg" alt="5" width="2045" height="484" />
+		<img src="img/bg3.jpg" alt="6" width="2045" height="484" />
+	</div>
+</div>
+<!--конец фонового слайдера-->
+
+
+
+
+<!--Подключаемые скрипты-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.carouFredSel-6.0.4-packed.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js" ></script>
+	<script type="text/javascript" src="js/common.js"></script>
+
+	
+</body>
+</html>

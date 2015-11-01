@@ -1,0 +1,149 @@
+.customSelect { 
+	position: relative;			
+	font-size: 20px;
+	font-family: "Roboto-Light", sans-serif; 
+	float: left;
+	margin-left: 80px;
+	margin-top:18px;
+	margin-bottom:35px;
+}		
+
+@media screen and (max-width:460px) 
+{
+.customSelect {margin-left: 10px;}	
+}
+
+.customSelect .selectedValue {
+  padding: 12px 19px;
+  margin-bottom: 0;
+  line-height: 1.2;
+  color: #555;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  border-top:1px solid #c4c4c4;
+   border-top-right-radius:2px;
+   border-top-left-radius:2px;
+}
+
+.customSelect .selectList {
+	z-index: 100;
+	position: absolute;
+	left: -999em;
+	top: -999em;
+  padding: 2px 0;
+  margin: 0;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #c4c4c4;
+}
+
+.customSelect.select-open .selectList {
+	left: 0 !important;
+	top: auto !important;
+}
+.customSelect .selectList dl {
+	background: #fff;	
+}
+.customSelect .selectList dl.defaultScrollbar {
+	overflow-x: hidden;
+	overflow-y: scroll;	
+}
+.customSelect dl, .customSelect dd {
+	margin: 0;
+}
+.customSelect dd {
+	zoom: 1;
+	cursor: pointer;
+}
+.customSelect .disabled {
+	color: #999;
+	cursor: default;
+}
+
+
+
+.customSelect .selected {
+	color: #c4c4c4;
+	text-decoration: none;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+.customSelect .selectList dd.hovered {
+	background: #999;
+	color: #fff;
+}
+.customSelect .selectList dd.disabled.hovered {
+	background: none;
+	color: #999;
+}
+.customSelect dt {
+	font-weight: bold;
+	font-style: italic;
+	padding: 2px 10px 2px 6px;
+}	
+.customSelect dd {
+	padding: 0 0 0 20px;
+	border-bottom: 1px solid #c4c4c4;
+	line-height: 50px;
+} 
+.hasJS select.custom {
+	position: absolute;
+	left: -999em;
+}
+.hasJS select.custom.use-default {
+	position: absolute;
+	left: auto;
+	height: auto;
+	width: 100%;
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	opacity: 0;
+	/* prevents iOS from zooming in on field */
+	font-size: 16px;
+}
+.customSelect.focused .selectedValue {
+
+}
+.customSelect.disabled .selectedValue {
+	border: 1px solid #ccc;
+	color: #ccc;
+	cursor: default;
+}
+.customSelect .caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: top;
+	border-top: 7px solid #000000;
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+	content: "";
+}
+.customSelect .selectValueWrap .caret {
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	cursor: pointer;
+}
+.customSelect .jspPane {
+	overflow-x: hidden;
+}
+.customSelect .jspVerticalBar {
+	background: none;
+	width: 4px;
+}
+.customSelect .jspHorizontalBar {
+	height: 0;
+	overflow: hidden;
+}
+.customSelect .jspTrack {
+	background-color: #ddd;
+	right: 2px;
+}
+.customSelect .jspDrag {
+	border-radius: 5px;
+	background-color: #555;
+}
+
+
