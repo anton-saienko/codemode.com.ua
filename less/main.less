@@ -46,6 +46,10 @@ margin:0 auto;
 min-width: 320px;
 text-align:center;
 }
+.overflow_hidden{
+overflow:hidden !important;
+}
+
 
 .personal_container{
 width:1000px;
@@ -296,7 +300,7 @@ border-radius: 1px !important;
 
 
 /* Кнопки в выборе портфолио */
-.portfolio_ul {
+.button-group {
 list-style: none;
 padding: 0;
 margin:0;
@@ -334,7 +338,7 @@ margin: 20px 0;
     padding: 0 !important;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
 	overflow:hidden;
-    .transition(0.6s);
+    
 
 		&:nth-of-type(1){background-image: url(../img/nrcrm.jpg); background-size: cover;}
 		&:nth-of-type(2){background-image: url(../img/smartcraft.jpg); background-size: cover;}
@@ -419,14 +423,7 @@ margin: 20px 0;
 	}
 }
 
-.selected {
-.transform(0deg, 1.05);
-}
 
-.not-selected {
-.transform(0deg, 0.75);
-	@media screen and (max-width:767px) {display:none;}
-}
 
 
  /*Футер в разделе - Контакты*/

@@ -125,6 +125,7 @@ cursor:default;
 				$close  = $preloader.find('.loading-container');
 			$close.delay(500).fadeOut('slow');
 			$preloader.delay(500).fadeOut('slow');
+			$("body").removeClass("overflow_hidden");
 		});
 	</script>
 	
@@ -138,13 +139,14 @@ cursor:default;
 	<script type="text/javascript" src="../js/less.js"></script>
 	
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/isotope.pkgd.min.js"></script>
 	<script type="text/javascript" src="../js/fullpage/jquery.slimscroll.min.js"></script>
 	<script type="text/javascript" src="../js/fullpage/jquery.fullPage.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.validate.js"></script>
 	<script type="text/javascript" src="../js/common_en.js"></script>
 </head>
-<body>
+<body class="overflow_hidden">
 
 <div id="preloader">
 	<div class="loading-container">
@@ -213,43 +215,43 @@ cursor:default;
 <div class="section" id="section2">
 	<div class="container personal_container">
             <h2>Portfolio</h2>
-			<nav>
-				<ul class="portfolio_ul">
-					<li id="all">All</li>
-					<li id="web">Websites</li>
-					<li id="training">Layouts</li>
+			<nav class="filters">
+				<ul class="button-group js-radio-button-group" data-filter-group="portfolio">
+					<li id="all" class="button is-checked" data-filter="">All</li>
+					<li id="web" class="button" data-filter=".web">Websites</li>
+					<li id="training" class="button" data-filter=".training">Layouts</li>
 				</ul>
 			</nav>
-        <section class="work">
-            <figure class="web">
+        <section class="work grid">
+            <figure class="item web">
                     <dl>
 					<dt></dt>
 						    <dd><a href="#popup1" class="popup">Short<br>description</a></dd>
 							<dd class="low_dd"><a href="http://nrcrm.gov.ua/en/" target="_blank">Visit<br>webpage</a></dd>
                     </dl>
             </figure>
-            <figure class="web">
+            <figure class="item web">
                     <dl>
 					<dt></dt>
 						    <dd><a href="#popup2" class="popup">Short<br>description</a></dd>
 							<dd class="low_dd"><a href="http://smartcraft.cc.ua/" target="_blank">Visit<br>webpage</a></dd>
                     </dl>
             </figure>
-            <figure class="training">
+            <figure class="item training">
                     <dl>
 					<dt></dt>
 						    <dd><a href="#popup3" class="popup">Short<br>description</a></dd>
 							<dd class="low_dd"><a href="../portfolio/czech/index.html" target="_blank">View<br>layout</a></dd>
                     </dl>
             </figure>
-			         <figure class="training">
+			         <figure class="item training">
                     <dl>
 					<dt></dt>
 						    <dd><a href="#popup4" class="popup">Short<br>description</a></dd>
 							<dd class="low_dd"><a href="../portfolio/dobrivo/index.html" target="_blank">View<br>layout</a></dd>
                     </dl>
             </figure>
-			<figure class="training">
+			<figure class="item training">
                     <dl>
 					<dt></dt>
 						    <dd><a href="#popup5" class="popup">Short<br>description</a></dd>

@@ -56,28 +56,46 @@ $(document).ready(function() {
 
 
 /*РАЗДЕЛ ПОРТФОЛИО*/
-$(document).ready(function(){ // По умолчанию выбраны все
-    $('#all').addClass('current-li');
-    $('nav > ul > li').click(function(){
-        show(this.id);
+$(document).ready( function() {
+  // init Isotope
+  var $grid = $('.grid').isotope({
+    itemSelector: '.item'
+  });
+
+  // store filter for each group
+  var filters = {};
+
+  $('.filters').on( 'click', '.button', function() {
+    var $this = $(this);
+    // get group key
+    var $buttonGroup = $this.parents('.button-group');
+    var filterGroup = $buttonGroup.attr('data-filter-group');
+    // set filter for group
+    filters[ filterGroup ] = $this.attr('data-filter');
+    // combine filters
+    var filterValue = concatValues( filters );
+    // set filter for Isotope
+    $grid.isotope({ filter: filterValue });
+  });
+
+  // change is-checked class on buttons
+  $('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = $( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function() {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      $( this ).addClass('is-checked');
     });
+  });
+  
 });
 
-function scaleDown() { // Заменяем классы у выделенных элементов, и удаляем класс у текущей категории
-    $('.work > figure').removeClass('selected').addClass('not-selected');
-    $('nav > ul > li').removeClass('current-li');
-}
-
-function show(category) { // Добавляем класс к категории,  меняем классы у выбранных работ
-    scaleDown();
-    $('#' + category).addClass('current-li');
-    $('.' + category).removeClass('not-selected');
-    $('.' + category).addClass('selected');
-    if (category == "all") { // Если выбраны все работы
-        $('nav > ul > li').removeClass('current-li');
-        $('#all').addClass('current-li');
-        $('.work > figure').removeClass('selected, not-selected');
-    }
+// flatten object by concatting values
+function concatValues( obj ) {
+  var value = '';
+  for ( var prop in obj ) {
+    value += obj[ prop ];
+  }
+  return value;
 }
 
 
