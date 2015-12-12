@@ -1,0 +1,98 @@
+
+
+/* font-family: "Roboto-Regular"; */
+@font-face {
+	font-family: "Roboto-Regular";
+	 src: url('../fonts/Roboto/Roboto-Regular.eot?') format('eot'), 
+         url('../fonts/Roboto/Roboto-Regular.woff') format('woff'), 
+         url('../fonts/Roboto/Roboto-Regular.ttf')  format('truetype');
+}
+
+/* font-family: "Roboto-Thin"; */
+@font-face {
+	font-family: "Roboto-Thin";
+	 src: url('../fonts/Roboto/Roboto-Thin.eot?') format('eot'), 
+         url('../fonts/Roboto/Roboto-Thin.woff') format('woff'), 
+         url('../fonts/Roboto/Roboto-Thin.ttf')  format('truetype');
+}
+
+/* font-family: "Roboto-Medium"; */
+@font-face {
+	font-family: "Roboto-Medium";
+ src: url('../fonts/Roboto/Roboto-Medium.eot?') format('eot'), 
+         url('../fonts/Roboto/Roboto-Medium.woff') format('woff'), 
+         url('../fonts/Roboto/Roboto-Medium.ttf')  format('truetype');
+}
+
+/* font-family: "Roboto-Bold"; */
+@font-face {
+	font-family: "Roboto-Bold";
+ src: url('../fonts/Roboto/Roboto-Bold.eot?') format('eot'), 
+         url('../fonts/Roboto/Roboto-Bold.woff') format('woff'), 
+         url('../fonts/Roboto/Roboto-Bold.ttf')  format('truetype');
+}
+
+/* font-family: "Roboto-Black"; */
+@font-face {
+	font-family: "Roboto-Black";
+ src: url('../fonts/Roboto/Roboto-Black.eot?') format('eot'), 
+         url('../fonts/Roboto/Roboto-Black.woff') format('woff'), 
+         url('../fonts/Roboto/Roboto-Black.ttf')  format('truetype');
+}
+
+/* font-family: "Roboto-Light"; */
+@font-face {
+	font-family: "Roboto-Light";
+ src: url('../fonts/Roboto/Roboto-Light.eot?') format('eot'), 
+         url('../fonts/Roboto/Roboto-Light.woff') format('woff'), 
+         url('../fonts/Roboto/Roboto-Light.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: "FontAwesome";
+ src: url('../fonts/FontAwesome/fontawesome-webfont.eot?') format('eot'), 
+         url('../fonts/FontAwesome/fontawesome-webfont.woff') format('woff'), 
+         url('../fonts/FontAwesome/fontawesome-webfont.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: "Europeext-Bold";
+ src: url('../fonts/Europe/Europeext-Bold.eot?') format('eot'), 
+         url('../fonts/Europe/Europeext-Bold.woff') format('woff'), 
+         url('../fonts/Europe/Europeext-Bold.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: "Europe-Bold";
+ src: url('../fonts/Europe/Europe-Bold.eot?') format('eot'), 
+         url('../fonts/Europe/Europe-Bold.woff') format('woff'), 
+         url('../fonts/Europe/Europe-Bold.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: "Europe-Normal";
+ src: url('../fonts/Europe/Europe-Normal.eot?') format('eot'), 
+         url('../fonts/Europe/Europe-Normal.woff') format('woff'), 
+         url('../fonts/Europe/Europe-Normal.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: "Eagle-Normal";
+ src: url('../fonts/Eagle/Eagle-Normal.eot?') format('eot'), 
+         url('../fonts/Eagle/Eagle-Normal.woff') format('woff'), 
+         url('../fonts/Eagle/Eagle-Normal.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: "Eagle-Bold";
+ src: url('../fonts/Eagle/Eagle-Bold.eot?') format('eot'), 
+         url('../fonts/Eagle/Eagle-Bold.woff') format('woff'), 
+         url('../fonts/Eagle/Eagle-Bold.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: "Mon-Amour";
+ src: url('../fonts/MonAmour/Mon-Amour.eot?') format('eot'), 
+         url('../fonts/MonAmour/Mon-Amour.woff') format('woff'), 
+         url('../fonts/MonAmour/Mon-Amour.ttf')  format('truetype');
+}
