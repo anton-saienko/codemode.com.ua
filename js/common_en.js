@@ -81,7 +81,7 @@ $(document).ready( function() {
   // change is-checked class on buttons
   $('.button-group').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.on( 'click', 'li', function() {
       $buttonGroup.find('.is-checked').removeClass('is-checked');
       $( this ).addClass('is-checked');
     });
@@ -109,7 +109,7 @@ if (document.documentElement.clientWidth > 767) {
 				navigationPosition: 'right',
 				menu: '#menu',
 				responsiveWidth: 768,
-				navigationTooltips: ['Главная', 'Информация', 'Портфолио','Контакты']
+				navigationTooltips: ['Main', 'Information', 'Portfolio', 'Contacts']
 			});
 		});
 }
@@ -122,7 +122,7 @@ if (document.documentElement.clientWidth < 768) {
 				navigationPosition: 'right',
 				menu: '#menu',
 				responsiveWidth: 768,
-				navigationTooltips: ['Главная', 'Информация', 'Портфолио','Контакты']
+				navigationTooltips: ['Main', 'Information', 'Portfolio', 'Contacts']
 			});
 		});
 }

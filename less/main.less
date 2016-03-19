@@ -305,22 +305,24 @@ list-style: none;
 padding: 0;
 margin:0;
 margin-top: 20px;
-margin-bottom: 50px;
 margin-left:10px;
 text-align: center;
 	@media screen and (max-width:480px) {margin-left:0;}
 	li {
-    display: inline;
+    display: inline-block;
     cursor: pointer;
-	margin-right:15px;
+	margin-right: 30px;
 	font-size: 18px;
 	font-family: @font-11;
 	color: @color-1;
 	text-shadow: #19418A 1px 0 0px, #19418A 0 1px 0px, #19418A -1px 0 0px, #19418A 0 -1px 0px;
+	vertical-align: middle;
+	line-height: 20px;
+	margin-bottom: 10px;
 		&:hover { color: #fff; }
-		&:after { margin-left: 15px; content: '/'; color: @color-1; } /* Разделитель*/
-		&:last-child { margin-right: 0; }/* Убираем margin у последнего элемента списка для корректного центрирования */ 
-		&:last-child:after { content: ''; }/* Убираем разделитель у последнего элемента списка*/ 
+
+		@media screen and (max-width:860px) { }
+
 	}
 }
 .is-checked {color: #fff !important;} /* Присваиваемый класс выбранному элементу категории */ 
@@ -342,10 +344,11 @@ margin: 20px 0;
 
 		&:nth-of-type(1){background-image: url(../img/nrcrm.jpg); background-size: cover;}
 		&:nth-of-type(2){background-image: url(../img/smartcraft.jpg); background-size: cover;}
-		&:nth-of-type(3){background-image: url(../img/czech.jpg); background-size: cover;}
-		&:nth-of-type(4){background-image: url(../img/dobrivo.jpg); background-size: cover;}
-		&:nth-of-type(5){background-image: url(../img/layout.jpg); background-size: cover;}
-		&:nth-of-type(6){background-image: url(../img/videoblog.jpg); background-size: cover;}
+		&:nth-of-type(3){background-image: url(../img/logo_layout.jpg); background-size: cover;}//id7
+		&:nth-of-type(4){background-image: url(../img/czech.jpg); background-size: cover;}//id3
+		&:nth-of-type(5){background-image: url(../img/dobrivo.jpg); background-size: cover;}//id4
+		&:nth-of-type(6){background-image: url(../img/layout.jpg); background-size: cover;}//id5
+		&:nth-of-type(7){background-image: url(../img/videoblog.jpg); background-size: cover;}//id6
 		
 		@media screen and (max-width:1200px) {width: 170px; height: 170px;}
 		@media screen and (max-width:860px) {width: 200px;height: 200px;}
@@ -675,7 +678,7 @@ width:200px;
 #img4{background-image: url(../img/dobrivo.jpg);}
 #img5{background-image: url(../img/layout.jpg);}
 #img6{background-image: url(../img/videoblog.jpg);}
-
+#img7{background-image: url(../img/logo_layout.jpg);}
 
 .popup_img_form{
 .popup_img;

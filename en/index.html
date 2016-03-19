@@ -4,16 +4,16 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Code Mode - студия HTML верстки</title>
-	<meta name="description" content="Code Mode - Front-end development studio | Accurate, logical, simple, readable HTML5 code">
+	<title>Code Mode - Front-end development</title>
+	<meta name="description" content="Code Mode - Front-end development | Accurate, logical, simple, readable HTML5 code">
 	
 	<!--Дополнительная информация для ссылок на даный сайт с внешних ресусов по типу ВКонтакте или Facebook -->
-	<meta property="og:title" content="Code Mode - Front-end development studio"/>
+	<meta property="og:title" content="Code Mode - Front-end development/>
 	<meta property="og:url" content="http://codemode.com.ua/en/"/>
 	<meta property="og:image" content="../img/cm.png"/>
 	<meta property="og:site_name" content="codemode.com.ua/en/"/>
 	<meta property="fb:admins" content="аккаунт владельца на фейсбуке"/>
-	<meta property="og:description" content="Code Mode - Front-end development studio | Accurate, logical, simple, readable HTML5 code"/>
+	<meta property="og:description" content="Code Mode - Front-end development | Accurate, logical, simple, readable HTML5 code"/>
 	<link rel="image_src" href="../img/cm.png"/> 
 	
 	<link rel="shortcut icon" href="../favicon.ico" />
@@ -24,99 +24,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Указание для IE использовать максимальную совместимость -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-#preloader{
-position: fixed;
-left: 0;
-top: 0;
-right:0;
-bottom:0;
-background: #fff;
-z-index: 999;
-}
-
-@keyframes rotate-loading {
-0%  {transform: rotate(0deg); -webkit-transform: rotate(0deg);}
-100% {transform: rotate(360deg);-webkit-transform: rotate(360deg);}
-}
-
-@-webkit-keyframes rotate-loading {
-0%  {transform: rotate(0deg); -webkit-transform: rotate(0deg); }
-100% {transform: rotate(360deg); -webkit-transform: rotate(360deg);}
-}
-
-@keyframes rotate-loading {
-0%  {transform: rotate(0deg); -webkit-transform: rotate(0deg);}
-100% {transform: rotate(360deg); -webkit-transform: rotate(360deg); }
-}
-
-@-webkit-keyframes rotate-loading {
-0%  {transform: rotate(0deg); -webkit-transform: rotate(0deg); }
-100% {transform: rotate(360deg);-webkit-transform: rotate(360deg);}
-}
-
-@keyframes loading-text-opacity {
-0%  {opacity: 0}
-20% {opacity: 0}
-50% {opacity: 1}
-100%{opacity: 0}
-}
-
-@-webkit-keyframes loading-text-opacity {
-0%  {opacity: 0}
-20% {opacity: 0}
-50% {opacity: 1}
-100%{opacity: 0}
-}
-
-.loading-container, .loading {
-height: 100px;
-position: relative;
-width: 100px;
-border-radius: 100%;
-}
-
-.loading-container { 
-position:absolute; 
-margin: 0 auto; 
-top:40%;
-left: 50%;
-margin-left:-50px;
-
-background-image: url(../img/preloader_logo.png);
-background-repeat: no-repeat;
-background-size: 80px auto;
-background-position: 10px 20px;
-}
-
-
-.loading {
-border: 2px solid transparent;
-border-color: transparent #19418A transparent #19418A;
-animation: rotate-loading 1.5s linear 0s infinite normal;
-transform-origin: 50% 50%;
--webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
--webkit-transform-origin: 50% 50%;
-}
-
-#loading-text {
--webkit-animation: loading-text-opacity 1s linear 0s infinite normal;
-animation: loading-text-opacity 1s linear 0s infinite normal;
-color: #19418A;
-font-family: "Helvetica Neue, "Helvetica", "arial"";
-font-size: 11px;
-font-weight: bold;
-padding-top:65px;
-opacity: 1;
-position: absolute;
-text-align: center;
-text-transform: uppercase;
-top: 0;
-width: 100px;
-height:50px;
-cursor:default;
-}
-</style>
+	<link rel="stylesheet" type="text/css" href="../css/preloader.css" /><!-- preloader styles-->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -185,7 +93,7 @@ cursor:default;
 <div id="fullpage">
 	<div class="section" id="section0">
 			<img class="logo" src="../img/cm.png" alt="logo">
-			<h1>Front-end development studio</h1>
+			<h1>Front-end development</h1>
 			<a class="ru_2" href="../index.html">RU</a><a class="en_2" href="index.html">EN</a><br><br>
 			<div class="mouse_div">
 				<img src="../img/mouse.png" alt="mouse">
@@ -202,7 +110,7 @@ cursor:default;
 <!--Информация -->
 	<div class="section" id="section1">
 		<div class="container personal_container">
-			<h1><span class="label_logo">"Code Mode"</span> front-end have</h1>
+			<h1><span class="label_logo">"Code Mode"</span> front-end means:</h1>
 			<p><span class="info">Semanticity:</span> Accurate, logical, simple, readable HTML5 code</p>
 			<p><span class="info">Validity:</span> Verification of each page for correctness by the official validator - validator.w3.org</p>
 			<p><span class="info">Cross-browser compatibility:</span> Website will look and work equally well in all popular browsers (Internet Explorer 9+, Mozilla Firefox, Google Chrome, Opera, Safari, etc.)</p>
@@ -214,58 +122,66 @@ cursor:default;
 <!--Портфолио -->
 <div class="section" id="section2">
 	<div class="container personal_container">
-            <h2>Portfolio</h2>
-			<nav class="filters">
-				<ul class="button-group js-radio-button-group" data-filter-group="portfolio">
-					<li id="all" class="button is-checked" data-filter="">All</li>
-					<li id="web" class="button" data-filter=".web">Websites</li>
-					<li id="training" class="button" data-filter=".training">Layouts</li>
-				</ul>
-			</nav>
-        <section class="work grid">
-            <figure class="item web">
-                    <dl>
+   <h2>Portfolio</h2>
+		<nav class="filters">
+			<ul class="button-group js-radio-button-group" data-filter-group="portfolio">
+				<li id="all" class="button is-checked" data-filter="">All</li>
+				<li id="web" class="button" data-filter=".web">WEBSITES</li>
+				<li id="training" class="button" data-filter=".training">HTML-coding</li>
+				<!--<li id="test_task" class="button" data-filter=".test_task">Front-end</li>-->
+			</ul>
+		</nav>
+		<section class="work grid">
+			<figure class="item web">
+				<dl>
 					<dt></dt>
-						    <dd><a href="#popup1" class="popup">Short<br>description</a></dd>
-							<dd class="low_dd"><a href="http://nrcrm.gov.ua/en/" target="_blank">Visit<br>webpage</a></dd>
-                    </dl>
-            </figure>
-            <figure class="item web">
-                    <dl>
+					<dd><a href="#popup1" class="popup">Short<br>description</a></dd>
+					<dd class="low_dd"><a href="http://nrcrm.gov.ua/en/" target="_blank">Visit<br>webpage</a></dd>
+				</dl>
+			</figure>
+			<figure class="item web">
+				<dl>
 					<dt></dt>
-						    <dd><a href="#popup2" class="popup">Short<br>description</a></dd>
-							<dd class="low_dd"><a href="http://smartcraft.cc.ua/" target="_blank">Visit<br>webpage</a></dd>
-                    </dl>
-            </figure>
-            <figure class="item training">
-                    <dl>
-					<dt></dt>
-						    <dd><a href="#popup3" class="popup">Short<br>description</a></dd>
-							<dd class="low_dd"><a href="../portfolio/czech/index.html" target="_blank">View<br>layout</a></dd>
-                    </dl>
-            </figure>
+					<dd><a href="#popup2" class="popup">Short<br>description</a></dd>
+					<dd class="low_dd"><a href="http://smartcraft.cc.ua/" target="_blank">Visit<br>webpage</a></dd>
+				</dl>
+			</figure>
 			<figure class="item training">
-                    <dl>
+				<dl>
 					<dt></dt>
-						    <dd><a href="#popup4" class="popup">Short<br>description</a></dd>
-							<dd class="low_dd"><a href="../portfolio/dobrivo/index.html" target="_blank">View<br>layout</a></dd>
-                    </dl>
-            </figure>
+					<dd><a href="#popup7" class="popup">Short<br>description</a></dd>
+					<dd class="low_dd"><a href="../portfolio/logo/index.html" target="_blank">View<br>layout</a></dd>
+				</dl>
+			</figure>
 			<figure class="item training">
-                    <dl>
+				<dl>
 					<dt></dt>
-						    <dd><a href="#popup5" class="popup">Short<br>description</a></dd>
-							<dd class="low_dd"><a href="../portfolio/layout/index.html" target="_blank">View<br>layout</a></dd>
-                    </dl>
-            </figure>
+					<dd><a href="#popup3" class="popup">Short<br>description</a></dd>
+					<dd class="low_dd"><a href="../portfolio/czech/index.html" target="_blank">View<br>layout</a></dd>
+				</dl>
+			</figure>
 			<figure class="item training">
-                    <dl>
+				<dl>
 					<dt></dt>
-						    <dd><a href="#popup6" class="popup">Short<br>description</a></dd>
-							<dd class="low_dd"><a href="../portfolio/videoblog/index.html" target="_blank">View<br>layout</a></dd>
-                    </dl>
-            </figure>
-        </section>
+					<dd><a href="#popup4" class="popup">Short<br>description</a></dd>
+					<dd class="low_dd"><a href="../portfolio/dobrivo/index.html" target="_blank">View<br>layout</a></dd>
+				</dl>
+			</figure>
+			<figure class="item training">
+				<dl>
+					<dt></dt>
+					<dd><a href="#popup5" class="popup">Short<br>description</a></dd>
+					<dd class="low_dd"><a href="../portfolio/layout/index.html" target="_blank">View<br>layout</a></dd>
+				</dl>
+			</figure>
+			<figure class="item training">
+				<dl>
+					<dt></dt>
+					<dd><a href="#popup6" class="popup">Short<br>description</a></dd>
+					<dd class="low_dd"><a href="../portfolio/videoblog/index.html" target="_blank">View<br>layout</a></dd>
+				</dl>
+			</figure>
+		</section>
 	</div>
 	<br><br>
 </div>
@@ -306,7 +222,7 @@ cursor:default;
 			</div>
 					
 			<div class="row">
-				<div class="col-md-12"><p class="copyright">&copy; 2015 - Code Mode</p></div>
+				<div class="col-md-12"><p class="copyright">&copy; 2016 - Code Mode</p></div>
 			</div>
 		</div>
 	</footer>
@@ -365,6 +281,15 @@ cursor:default;
 				<h3>Test layout "Video Blog"</h3>
 				<p><span class="features">Features: </span>responsivity (640px - 1920px) - layout is implemented so that the content is stretched to the entire width of the screen; connection of a video player for playing video files that lie directly on the server; video connections from external video hostings like Youtube, Vimeo; implemented a slider, that allows you to select different videos and so on.</p>
 				<a href="../portfolio/videoblog/index.html" target="_blank">Watch the layout</a>
+			</div>
+	</div>
+	
+	<div class="popup_content" id="popup7">
+		<div class="popup_img" id="img7"></div>
+			<div class="popup_text">
+				<h3>Test layout "Logo"</h3>
+				<p><span class="features">Features: </span>full responsivity (320px - 1600+px); connection of background gallery, stylization of 'radio buttons', implementation of parallax effect, etc.</p>
+				<a href="../portfolio/logo/index.html" target="_blank">Watch the layout</a>
 			</div>
 	</div>
 	
